@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/index.css">
 
     <title>Portofolio</title>
 </head>
 <body>
 
-    <div id="header" class="container m-auto px-4 py-4 rounded-md max-w-sm w-full sm:max-w-full sm:flex">
+    <div id="header" class="container mx-auto px-4 py-4 mt-9 rounded-md sm:flex">
         <!-- <div class="bg-cover bg-top object-cover w-40 rounded-xl" style="background-image: url('/img/profile.jpg');"></div> -->
         <img src="img/profile.jpg" alt="" class="h-36 rounded-xl">
         <div class=" bg-white md:pl-4 md:py-2 py-2 flex flex-col justify-between leading-normal">
@@ -23,7 +23,7 @@
           </div>
         </div>
         
-        <div class="md:px-4 px-0 py-2 container max-w-sm w-full lg:max-w-full lg:flex flex-wrap">
+        <div class="md:px-4 px-0 py-2 container w-full lg:max-w-full lg:flex flex-wrap">
           <p class="text-base text-gray-900 font-semibold flex items-center">
             <svg class="w-5 h-5 mr-2 " width="24" height="24" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18 18.5C16.35 18.5 14.9375 17.9125 13.7625 16.7375C12.5875 15.5625 12 14.15 12 12.5C12 10.85 12.5875 9.4375 13.7625 8.2625C14.9375 7.0875 16.35 6.5 18 6.5C19.65 6.5 21.0625 7.0875 22.2375 8.2625C23.4125 9.4375 24 10.85 24 12.5C24 14.15 23.4125 15.5625 22.2375 16.7375C21.0625 17.9125 19.65 18.5 18 18.5ZM6 30.5V26.3C6 25.45 6.219 24.6685 6.657 23.9555C7.095 23.2425 7.676 22.699 8.4 22.325C9.95 21.55 11.525 20.9685 13.125 20.5805C14.725 20.1925 16.35 19.999 18 20C19.65 20 21.275 20.194 22.875 20.582C24.475 20.97 26.05 21.551 27.6 22.325C28.325 22.7 28.9065 23.244 29.3445 23.957C29.7825 24.67 30.001 25.451 30 26.3V30.5H6Z" fill="#28282B"/>
@@ -40,10 +40,10 @@
       
       <!-- End of Introduction -->
 
-       <div class="container m-auto px-4 pt-4 max-w-sm sm:max-w-full sm:flex"> 
+       <div class="container px-4 pt-4 sm:flex mx-auto md:grid md:grid-cols-2 lg:grid-cols-4"> 
         <!-- start personal info -->
 
-        <div id="contact" class="pr-2 py-2">
+        <div id="contact" class="px-2 py-2">
           <p class="text-base text-gray-900 font-semibold flex items-center">
             <svg class="w-5 h-5 mr-2" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2540_8407)">
@@ -120,7 +120,7 @@
           </div> 
 
           <!-- end of other -->
-          <div id="skills" class="sm:px-2 py-2 bg-white lg:w-1/2">
+          <div id="skills" class="sm:px-2 py-2 bg-white">
             <p class="text-base text-gray-900 font-semibold flex items-center">
               <svg class="w-5 h-5 mr-2" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="mdi:application-parentheses">
@@ -157,7 +157,7 @@
           </div>
           <!-- end of skills -->
 
-          <div id="tools" class="sm:px-2 py-2 bg-white lg:w-1/2">
+          <div id="tools" class="sm:px-2 py-2 bg-white">
             <p class="text-base text-gray-900 font-semibold flex items-center">
               <svg class="w-5 h-5 mr-2" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="mdi:application-cog">
@@ -192,7 +192,7 @@
 
       <!-- end of personal info -->
 
-      <div id="tools" class="container px-4 py-4 bg-white">
+      <div id="project" class="container px-4 py-4 bg-white mx-auto">
         <p class="text-base text-gray-900 font-semibold flex items-center">
           <svg class="w-5 h-5 mr-2" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="mdi:book-multiple">
@@ -204,9 +204,9 @@
 
       <!-- start of Cards project -->
 
-      <div id="overflow-project" class="container m-auto bg-white">
-        <div class="md:flex overflow-x-scroll sm:space-x-4">
-          <div id="Cards" class="md:w-1/4 relative mt-4 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+      <div id="overflow-project" class="container bg-white">
+        <div class="grid gap-4 mt-4 md:grid-cols-3 lg:grid-cols-4">
+          <div id="Cards" class="relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
            
             <span class="text-xs absolute right-0 m-4 px-2 py-2 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-blue-900 bg-blue-200">Class Project</span>
             <a href="#">
@@ -214,7 +214,7 @@
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-xs md:text-base font-bold text-gray-900 truncate text-clip">Hale.id Website Redesign</h5>
+                    <h5 class="mb-2 text-xs md:text-base font-bold text-gray-900 truncate">Hale.id Website Redesign</h5>
                 </a>
                 <p class="mb-3 text-xs md:text-base font-normal text-gray-700 ">
                   Hale id is an e-commerce based in Indonesia that sells skincare product.</p>
@@ -226,7 +226,7 @@
                 </a>
             </div>
           </div>
-          <div id="Cards" class="md:w-1/4 relative mt-4 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <div id="Cards" class="relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
             <span class="text-xs absolute right-0 m-4 px-2 py-2 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-blue-900 bg-blue-200">Class Project</span>
             <a href="#">
                 <img class="rounded-t-lg bg-cover" src="img/thumbnail_byeCovid.png" alt=""/>
@@ -245,7 +245,7 @@
                 </a>
             </div>
           </div>
-          <div id="Cards" class="md:w-1/4 relative mt-4 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <div id="Cards" class="relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
             <span class="text-xs absolute right-0 m-4 px-2 py-2 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-red-900 bg-red-200">Internship Project</span>
             <a href="#">
                 <img class="rounded-t-lg bg-cover" src="img/thumbnail_tepres.png" alt=""/>
@@ -264,7 +264,7 @@
                 </a>
             </div>
           </div>
-          <div id="Cards" class="md:w-1/4 relative mt-4 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <div id="Cards" class="relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
             <span class="text-xs absolute right-0 m-4 px-2 py-2 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-blue-900 bg-blue-200">Class Project</span>
             <a href="#">
                 <img class="rounded-t-lg bg-cover" src="img/thumbnail_duit.png" alt=""/>
@@ -283,7 +283,7 @@
                 </a>
             </div>
           </div>  
-          <div id="Cards" class="md:w-1/4 relative mt-4 bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <div id="Cards" class="relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
             <span class="text-xs absolute right-0 m-4 px-2 py-2 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-green-900 bg-green-200">Thesis Project</span>
             <a href="#">
                 <img class="rounded-t-lg bg-cover" src="img/thumbnail_livin.png" alt=""/>
