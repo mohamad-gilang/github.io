@@ -28,9 +28,31 @@
 
 <body>
 
+  <section class="bg-cover bg-center bg-gray-200/50 rounded-b-lg">
+    <img src="img/techguy.png" class="mx-auto sm:block md:hidden h-56 -translate-y-24" alt="">
+    <div class="md:px-4 px-6 mx-auto md:w-1/2 pb-48 pt-8 md:py-64 sm:text-center">
+      <img src="img/techguy.png" class="md:block hidden h-56 md:absolute sm:right-1/3 mb-8 max-lg:translate-y-4" alt=""> 
+      <div class="md:hover:-translate-x-24 md:hover:text-left transition-transform ">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-700 md:text-5xl lg:text-6xl">Hello!</h1>
+        <div class="mb-8 text-lg font-normal text-gray-500 lg:text-xl">
+          <p>I promise I won't fail you like</p>
+          <p>I did with the jumbotron.</p>
+        </div>
+      </div>     
+        <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 justify-center max-sm:w-1/2">
+            <a href="#profile" class="hover:backdrop-blur-xl focus:ring-2 focus:ring-white inline-flex justify-center items-center py-3 px-5 text-base font-bold text-center md:text-white text-gray-700 rounded-full backdrop-blur-md bg-white/30 border border-white transition-transform">
+                Get started
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+      </div>
+  </section>
+
   </div>
 
-     <div class="container mx-auto px-4 py-4 mt-9 md:flex md:space-x-3">
+     <div id="profile" class="container mx-auto px-4 py-4 mt-9 md:flex md:space-x-3">
       <div id="header" class="flex px-2 py-2 items-center">
           <!-- <div class="bg-cover bg-top object-cover w-40 rounded-xl" style="background-image: url('/img/profile.jpg');"></div> -->
           <img src="img/profile.jpg" alt="" class="md:h-36 md:w-36 h-20 w-20 rounded-full">
@@ -243,54 +265,54 @@
       <!-- start of Cards project -->
 
       <div id="overflow-project" class="container bg-white overflow-x-auto">
-        <div class="grid gap-4 mt-4 md:grid-cols-3 lg:grid-cols-4">
+        <div class="grid gap-6 max-sm:gap-3 m-6 max-sm:m-0 max-sm:mt-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-          <a id="card" href="project/hale.html" class="block relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <a id="card" href="project/hale.html" class="block relative bg-white border border-gray-200 rounded-lg shadow focus:ring-4 focus:ring-gray-200 hover:-translate-y-3 hover:shadow-lg transition-transform">
             <span class="text-xs absolute right-0 m-4 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-blue-900 bg-blue-200">Class Project</span>
             <img class="rounded-t-lg bg-cover" src="img/thumbnail_hale.png" alt=""/>
             <div class="p-5">
                 <h5 class="mb-2 text-base font-bold text-gray-900 truncate">Hale.id Website Redesign</h5>
-                <p class="text-base font-normal text-gray-700 ">
-                  Hale id is an e-commerce based in Indonesia that sells skincare product.</p>
+                <p class="text-base font-normal text-gray-700 max-sm:truncate">
+                  Hale id is an e-commerce that sells skincare product.</p>
             </div>
           </a>
 
-          <a id="card" href="project/byecovid.html" class=" block relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <a id="card" href="project/byecovid.html" class=" block relative bg-white border border-gray-200 rounded-lg shadow focus:ring-4 focus:ring-gray-200 hover:-translate-y-3 hover:shadow-lg transition-transform">
             <span class="text-xs absolute right-0 m-4 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-blue-900 bg-blue-200">Class Project</span>
             <img class="rounded-t-lg bg-cover" src="img/thumbnail_byeCovid.png" alt=""/>
             <div class="p-4">
                 <h5 class="mb-2 text-base font-bold text-gray-900 truncate">ByeCovid Product Design</h5>
-                <p class="text-base font-normal text-gray-700 ">
-                  ByeCovid is a mobile-based application concept for Booking COVID-19 Test.</p>
+                <p class="text-base font-normal text-gray-700 max-sm:truncate">
+                  ByeCovid is a design concept application for COVID test Booking.</p>
             </div>
           </a>
 
-          <a id="card" href="project/tepres.html" class=" block relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <a id="card" href="project/tepres.html" class=" block relative bg-white border border-gray-200 rounded-lg shadow focus:ring-4 focus:ring-gray-200 hover:-translate-y-3 hover:shadow-lg transition-transform">
             <span class="text-xs absolute right-0 m-4 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-green-900 bg-green-200">Internship Project</span>
             <img class="rounded-t-lg bg-cover" src="img/thumbnail_tepres.png" alt=""/>
             <div class="p-4">
                 <h5 class="mb-2 text-base font-bold text-gray-900 truncate">Tepres Web Design</h5>
-                <p class="text-base font-normal text-gray-700 ">
+                <p class="text-base font-normal text-gray-700 max-sm:truncate">
                   Tepres is a heavy vehicle services company from Samarinda.</p>
             </div>
           </a>
 
-          <a id="card" href="" class=" block relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <a id="card" href="" class=" block relative bg-white border border-gray-200 rounded-lg shadow focus:ring-4 focus:ring-gray-200 hover:-translate-y-3 hover:shadow-lg transition-transform">
             <span class="text-xs absolute right-0 m-4 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-blue-900 bg-blue-200">Class Project</span>
             <img class="rounded-t-lg bg-cover" src="img/thumbnail_duit.png" alt=""/>
             <div class="p-4">
                 <h5 class="mb-2 text-base font-bold text-gray-900 truncate">Digital Wallet Manager</h5>
-                <p class="text-base font-normal text-gray-700 ">
+                <p class="text-base font-normal text-gray-700 max-sm:truncate">
                   DuitFusion is a design concept for managing e-wallet transaction.</p>
             </div>
           </a>
 
-          <a id="card" href="" class=" block relative bg-white border border-gray-200 rounded-lg shadow dark:border-gray-300">
+          <a id="card" href="" class=" block relative bg-white border border-gray-200 rounded-lg shadow focus:ring-4 focus:ring-gray-200 hover:-translate-y-3 hover:shadow-lg transition-transform">
             <span class="text-xs absolute right-0 m-4 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center align-baseline font-bold leading-none text-pink-900 bg-pink-200">Thesis Project</span>
             <img class="rounded-t-lg bg-cover" src="img/thumbnail_livin.png" alt=""/>
             <div class="p-4">
                 <h5 class="mb-2 text-base font-bold text-gray-900 truncate">Livin' by Mandiri Redesign</h5>
-                <p class="text-base font-normal text-gray-700 ">
+                <p class="text-base font-normal text-gray-700 max-sm:truncate">
                   Livin' by Mandiri is a digital mobile banking services from Bank Mandiri.</p>
             </div>
           </a>
