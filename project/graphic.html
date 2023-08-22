@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../src/index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNPG1JQRMQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RNPG1JQRMQ');
+  </script>
+
+  <script>
+    const details = document.querySelectorAll("details");
+    // Add the onclick listeners.
+    details.forEach((targetDetail) => {
+      targetDetail.addEventListener("click", () => {
+        // Close all the details that are not targetDetail.
+        details.forEach((detail) => {
+          if (detail !== targetDetail) {
+            detail.removeAttribute("open");
+          }
+        });
+      });
+    });
+  </script>
+
+  <meta name="author" content="Gilang" />
+  <meta name="description" content="Web Portfolio" />
+
+  <title>Portfolio - Visual Design</title>
+
+</head>
+
+<body>
+
+  <nav class="max-sm:hidden bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+      <ul class="flex gap-6 text-lg font-bold text-blue-950">
+        <li><a href="../index.html#graphic">Home</a></li>
+        <li><a class="py-2 pl-3 pr-4" href="#2022" aria-current="page">2022</a></li>
+        <li><a class="py-2 pl-3 pr-4" href="#2021">2021</a></li>
+        <li><a class="py-2 pl-3 pr-4" href="#2020">2020</a></li>
+        <li><a class="py-2 pl-3 pr-4" href="#2019">2019</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- bottom navbar sm screen-->
+  <div class="w-full mx-auto">
+    <div class="flex justify-center w-full">
+      <div class="md:hidden fixed bottom-2 z-50 h-16 w-3/4 backdrop-blur-md rounded-full bg-white/70 mx-auto  ">
+        <div class="flex flex-wrap justify-between items-center h-full">
+          <a href="../index.html#graphic" class="w-1/5 h-16 flex justify-center items-center">
+            <div class="">
+              <svg class="h-6 w-6" width="20px" height="20px" viewBox="0 0 24 24" fill="#ffffff"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.5192 7.82274C2 8.77128 2 9.91549 2 12.2039V13.725C2 17.6258 2 19.5763 3.17157 20.7881C4.34315 22 6.22876 22 10 22H14C17.7712 22 19.6569 22 20.8284 20.7881C22 19.5763 22 17.6258 22 13.725V12.2039C22 9.91549 22 8.77128 21.4808 7.82274C20.9616 6.87421 20.0131 6.28551 18.116 5.10812L16.116 3.86687C14.1106 2.62229 13.1079 2 12 2C10.8921 2 9.88939 2.62229 7.88403 3.86687L5.88403 5.10813C3.98695 6.28551 3.0384 6.87421 2.5192 7.82274ZM9.44661 15.3975C9.11385 15.1508 8.64413 15.2206 8.39747 15.5534C8.15082 15.8862 8.22062 16.3559 8.55339 16.6025C9.5258 17.3233 10.715 17.75 12 17.75C13.285 17.75 14.4742 17.3233 15.4466 16.6025C15.7794 16.3559 15.8492 15.8862 15.6025 15.5534C15.3559 15.2206 14.8862 15.1508 14.5534 15.3975C13.825 15.9373 12.9459 16.25 12 16.25C11.0541 16.25 10.175 15.9373 9.44661 15.3975Z"
+                  fill="#2f2f2f" />
+              </svg>
+              <h1 class="sr-only">Home</h1>
+            </div>
+          </a>
+          <a href="#2022" class="w-1/5 h-16 flex justify-center items-center">
+            <div class="font-bold">'22</div>
+          </a>
+          <a href="#2021" class="w-1/5 h-16 flex justify-center items-center">
+            <div class="font-bold">'21</div>
+          </a>
+          <a href="#2020" class="w-1/5 h-16 flex justify-center items-center">
+            <div class="font-bold">'20</div>
+          </a>
+          <a href="#2019" class="w-1/5 h-16 flex justify-center items-center">
+            <div class="font-bold">'19</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- end of sidebar -->
+  <div class="container lg:max-w-6xl mx-auto mt-16 max-sm:mt-0">
+
+    <div id="title" class="p-4 mt-4 flex flex-col">
+      <h1 class="text-2xl md:text-4xl font-bold text-gray-800">Visual Design Showcase</h1>
+      <h1 class="mt-2 text-base md:text-lg font-normal text-gray-500">A Design Portfolio by Mohamad Gilang</h1>
+      <!-- <hr class="mt-4"> -->
+    </div>
+
+    <!-- 2022 -->
+
+
+    <div class="flex p-4 gap-4 items-center">
+      <div class="w-4/5">
+        <div class="border border-t-2 border-t-sky-800"></div>
+      </div>
+      <div id="2022" class="w-1/5 text-3xl max-sm:text-3xl text-sky-800 m-4 text-right">2022</div>
+    </div>
+
+    <div class="p-4 grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div id="2022/1" class=" bg-white  shadow-sm rounded-sm">
+        <div class="p-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">SILUET Vol.10 Magazine</h1>
+        </div>
+        <img class="" src="../img/showcase_magazine.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Organization</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              PiC</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Photoshop</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Responsible as a quality assurance of the design and content, additionally designing a cover, table of
+              content, team's structure, last two pages, and back-cover.</h1>
+            <a class="flex hover:underline mt-6" href="https://issuu.com/infokomemsiub/docs/siluet_vol_10"
+              target="_blank">
+              <div class="p-2 bg-gray-800 flex flex-wrap items-center">
+                <h1 class="text-white">Publication</h1>
+                <svg class="ml-1" width="20" height="20" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z"
+                    fill="#ffffff"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="2022/2" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Promotional Flyer</h1>
+        </div>
+        <img class="" src="../img/showcase_siluet.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Organization</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Person-in-Charge</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a flyer in order to increase magazine's reader.</h1>
+          </div>
+        </div>
+      </div>
+      <div id="2022/3" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Infographic Poster</h1>
+        </div>
+        <img class="" src="../img/showcase_menku.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Poster</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Freelance</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a poster with assets that already provided by client.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2021 -->
+
+    <div class="flex p-4 gap-4 items-center">
+      <div class="w-4/5">
+        <div class="border border-t-2 border-t-sky-800"></div>
+      </div>
+      <div id="2021" class="w-1/5 text-3xl max-sm:text-3xl text-sky-800 m-4 text-right">2021</div>
+    </div>
+    <div class="p-4 grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div id="2021/1" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Brand Logo For Reiwa</h1>
+        </div>
+        <img class="" src="../img/showcase_reiwa.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Logo</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Freelance</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a logo for Reiwa Furniture. Reiwa are providing a services like custom furniture and interior
+              design consultant.</h1>
+            <a class="flex hover:underline mt-6" href="https://www.instagram.com/reiwa.furniture/" target="_blank">
+              <div class="p-2 bg-gray-800 flex flex-wrap items-center">
+                <h1 class="text-white">Instagram</h1>
+                <svg class="ml-1" width="20" height="20" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z"
+                    fill="#ffffff"></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="2021/2" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Isometric Graphic Design</h1>
+        </div>
+        <img class="" src="../img/showcase_energy.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Poster</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Freelance</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a poster that required to look like a mini environment of renewable energy system as a solution
+              for unavailable energy in a certain communities.</h1>
+          </div>
+        </div>
+      </div>
+      <div id="2021/3" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">BIOS Social Media Post</h1>
+        </div>
+        <img class="" src="../img/showcase_bios2.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Social Media</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Organization</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Responsible as Head of Art and Media Departement. Developed a template for social media post. Designed
+              some social media post for Badan Internal Olahraga dan Seni (BIOS).</h1>
+          </div>
+        </div>
+      </div>
+      <div id="2021/4" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">BIONESCO Social Media</h1>
+        </div>
+        <img class="" src="../img/showcase_bionesco.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Social Media</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Volunteer</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Responsible as co-Head of Design and Media Departement. Developed the design theme and style and also
+              designed a few social media post.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2020 -->
+    <div class="flex p-4 gap-4 items-center">
+      <div class="w-4/5">
+        <div class="border border-t-2 border-t-sky-800"></div>
+      </div>
+      <div id="2020" class="w-1/5 text-3xl max-sm:text-3xl text-sky-800 m-4 text-right">2020</div>
+    </div>
+    <div class="p-4 grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div id="2020/1" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Butter Biter</h1>
+        </div>
+        <img class="" src="../img/showcase_butter.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Social Media</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Self-project</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Butter Biter was born while the pandemic occurs. I was responsible for managing the social media which
+              is Instagram, Designed a promotional post and story.</h1>
+            <a class="flex hover:underline mt-6" href="https://www.instagram.com/butter_biter/" target="_blank">
+              <div class="p-2 bg-gray-800 flex flex-wrap items-center">
+                <h1 class="text-white">Instagram</h1>
+                <svg class="ml-1" width="20" height="20" viewBox="0 0 12 12" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.5 3C3.22386 3 3 3.22386 3 3.5C3 3.77614 3.22386 4 3.5 4V3ZM8.5 3.5H9C9 3.22386 8.77614 3 8.5 3V3.5ZM8 8.5C8 8.77614 8.22386 9 8.5 9C8.77614 9 9 8.77614 9 8.5H8ZM2.64645 8.64645C2.45118 8.84171 2.45118 9.15829 2.64645 9.35355C2.84171 9.54882 3.15829 9.54882 3.35355 9.35355L2.64645 8.64645ZM3.5 4H8.5V3H3.5V4ZM8 3.5V8.5H9V3.5H8ZM8.14645 3.14645L2.64645 8.64645L3.35355 9.35355L8.85355 3.85355L8.14645 3.14645Z"
+                    fill="#ffffff"></path>
+                </svg>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="2020/2" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Video Graphic Design</h1>
+        </div>
+        <div style="width:100%;height:0;padding-bottom:63%;position:relative;">
+          <video autoplay loop muted playsinline>
+            <source src="../assets/media/mrfest.webm" type="video/webm" />
+          </video>
+        </div>
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Volunteer</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Premiere Pro</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a graphics with Illustrator to support the final event of Malang Revolutive Festival. The
+              graphics are intro with countdown, backdrop for welcoming speech, and lower third. All graphics were
+              animated using Premiere Pro. </h1>
+          </div>
+        </div>
+      </div>
+      <div id="2020/3" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">BIOS Social Media Post</h1>
+        </div>
+        <img class="" src="../img/showcase_bios1.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Social Media</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Organization</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Responsible as co-Head of Art and Media Departement. Designed a social media post on demand for Badan
+              Internal Olahraga dan Seni (BIOS).</h1>
+          </div>
+        </div>
+      </div>
+      <div id="2020/4" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">BIOS Charity</h1>
+        </div>
+        <img class="" src="../img/showcase_charity.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Social Media</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Organization</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Illustrator</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a charity post for Badan Internal Olahraga dan Seni (BIOS) with the help of an organization
+              called Human Initiative for East Java.</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2019 and below -->
+
+    <div class="flex p-4 gap-4 items-center">
+      <div class="w-4/5">
+        <div class="border border-t-2 border-t-sky-800"></div>
+      </div>
+      <div id="2019" class="w-1/5 text-3xl max-sm:text-3xl text-sky-800 m-4 text-right">2019 & before</div>
+    </div>
+    <div class="p-4 grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+      <div id="2019/1" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Graduation Backdrop</h1>
+        </div>
+        <img class="" src="../img/showcase_backdrop.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Print</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Freelance</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Photoshop</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a backdrop as a photo spot for the Graduation event back in High School.</h1>
+          </div>
+        </div>
+      </div>
+      <div id="2019/2" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Graduation Medal</h1>
+        </div>
+        <img class="" src="../img/showcase_medal.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Print</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Freelance</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Photoshop</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a medal as a gift for the Graduation event back in High School.</h1>
+          </div>
+        </div>
+      </div>
+      <div id="2018/3" class=" bg-white  shadow-sm rounded-sm">
+        <div class="px-6 py-4">
+          <h1 class="font-semibold text-2xl leading-normal text-gray-900">Rohis Event Donation</h1>
+        </div>
+        <img class="" src="../img/showcase_donation.png" alt="" />
+        <div class="p-6 space-y-4">
+          <div class="tag flex item center overflow-x-auto gap-2">
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Poster</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Organization</span>
+            <span
+              class="text-sm md:text-base md:px-3 px-2 py-1 inline-block whitespace-nowrap rounded-full text-center font-normal leading-none text-gray-500 bg-[#F0F0F4]">
+              Photoshop</span>
+          </div>
+          <div class=" text-gray-700/80 text-lg leading-normal">
+            <h1>Designed a donation poster to help the organization event back in High School.</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end of showcase -->
+
+    <footer class="container mx-auto p-2 my-4 flex justify-center">
+      <div class="flex-wrap justify-center text-center text-sm font-medium leading-normal">
+        <h1>© 2023. Vectors and icons by <a href="https://www.svgrepo.com" target="_blank">SVG Repo</a></h1>
+        <h1>Mockup by <a href="https://artboard.studio/templates" target="_blank">Artboard Studio</a></h1>
+      </div>
+
+    </footer>
+
+</body>
+
+</html>
