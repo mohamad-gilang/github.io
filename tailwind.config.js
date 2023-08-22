@@ -6,7 +6,15 @@ module.exports = {
     "index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        worksans: ['"Work Sans"', 'sans-serif'],
+        lora: ['"Lora"', 'serif'],
+
+
+        
+      },
+    },
   },
   plugins: [],
 }
